@@ -1,4 +1,4 @@
-#🔐 Cryptography Algorithms in Python
+#🔐 Cryptography Algorithms
 
 ## 📚 Overview
 This repository contains Python implementations of various cryptographic algorithms. Cryptography is essential for protecting sensitive information, and this repo serves as a simple guide to different techniques used in modern cryptography. 🔒
@@ -11,8 +11,8 @@ This repository contains Python implementations of various cryptographic algorit
 
 ## 🚀 Get Started
 1. Clone the repo:  
-   `git clone https://github.com/yourusername/cryptography-algorithms.git`
-2. Run the Python examples and explore the code! 💻
+   `https://github.com/VibhuYadav2005/CryptoGraphy.git`
+2. Run these examples and explore the code! 💻
 
 ## 🛠️ How to Contribute
 Contributions are welcome! Feel free to submit pull requests or open issues. 🌟
