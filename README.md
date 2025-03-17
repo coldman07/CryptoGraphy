@@ -1,4 +1,4 @@
-###🔐 Cryptography Algorithms in Python
+#🔐 Cryptography Algorithms in Python
 
 ## 📚 Overview
 This repository contains Python implementations of various cryptographic algorithms. Cryptography is essential for protecting sensitive information, and this repo serves as a simple guide to different techniques used in modern cryptography. 🔒
