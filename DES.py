@@ -113,7 +113,10 @@ def p_permutation(sbox_output):
 
 # XOR function
 def xor(bits1, bits2):
+    if len(bits1) != len(bits2):
+        raise ValueError(f"Length mismatch: {len(bits1)} vs {len(bits2)}")
     return ''.join(['0' if bits1[i] == bits2[i] else '1' for i in range(len(bits1))])
+
 
 # DES round function
 def des_round(left, right, round_key):
@@ -125,8 +128,19 @@ def des_round(left, right, round_key):
     return new_right, right  # Swap for next round
 
 # Key scheduling (just for example, simple shifts here)
-def generate_round_keys(key):
-    return [key[i:i + 48] for i in range(0, len(key), 48)]  # Simplified for this example
+def generate_round_keys(key_bin):
+    # Ensure the key_bin is 64 bits
+    if len(key_bin) != 64:
+        raise ValueError("Key must be 64 bits.")
+
+    # Placeholder for 16 round keys, in real DES key schedule, keys are derived from permutations
+    round_keys = []
+    for i in range(16):
+        # For simplicity, we are just using 48 bits of the key for the round key.
+        # You can add complex shifts and permutations here if needed.
+        round_keys.append(key_bin[:48])  # Truncate the first 48 bits for simplicity.
+    
+    return round_keys
 
 # DES encryption function
 def des_encrypt(plain_text, key):
